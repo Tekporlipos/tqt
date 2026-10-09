@@ -6,7 +6,7 @@
 <title>Approach — Tekpor Quant Technologies</title>
 <meta name="description" content="How Tekpor Quant builds, sizes, diversifies and monitors its automated investment strategies.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<script>try{var t=localStorage.getItem("tqt_theme");document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}catch(e){}</script>
+<script>try{var t=localStorage.getItem("tqt_theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="stylesheet" href="assets/styles.css">
 <script src="assets/site.js" defer></script>
 </head>
@@ -17,6 +17,7 @@
     <nav class="links" id="links">
       <a class="l" href="index.html">Home</a>
       <a class="l on" href="solutions.html">Approach</a>
+      <a class="l" href="strategy.html">Strategy &amp; Coin</a>
       <a class="l" href="performance.html">Performance</a>
       <a class="l" href="roadmap.html">Roadmap</a>
       <a class="l" href="risk.html">Risk</a>
@@ -57,10 +58,10 @@
       <table>
         <thead><tr><th>Group</th><th>Examples</th><th>Main driver</th><th>Role in the book</th></tr></thead>
         <tbody>
-          <tr><td>US equity indices</td><td>US500, USTEC</td><td>US growth, rates, earnings</td><td>Core growth exposure</td></tr>
-          <tr><td>Non-US indices</td><td>STOXX50, UK100, AUS200</td><td>Regional economies, local currencies, commodities</td><td>Spreads the equity risk across regions</td></tr>
+          <tr><td>US equity indices</td><td>S&amp;P 500, Nasdaq 100</td><td>US growth, rates, earnings</td><td>Core growth exposure</td></tr>
+          <tr><td>Non-US indices</td><td>Euro Stoxx 50, FTSE 100, ASX 200, Nikkei 225</td><td>Regional economies, local currencies, commodities</td><td>Spreads the equity risk across regions</td></tr>
           <tr><td>Precious metals</td><td>Gold, silver</td><td>Real yields, safe-haven demand</td><td>Often moves apart from equities</td></tr>
-          <tr><td>Digital assets</td><td>BTC</td><td>Liquidity, crypto-specific flows</td><td>Independent return stream</td></tr>
+          <tr><td>Digital assets</td><td>Ethereum, Bitcoin</td><td>Liquidity, crypto-specific flows</td><td>Independent return stream</td></tr>
           <tr><td>Single stocks</td><td>Selected US shares</td><td>Company results</td><td>Tactical, rotated out after a profit</td></tr>
         </tbody>
       </table>

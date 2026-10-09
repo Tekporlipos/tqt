@@ -76,7 +76,7 @@ section { padding: 72px 0; }
 .links a.l { color: var(--muted); font-size: 14px; }
 .links a.l:hover, .links a.l.on { color: var(--text); text-decoration: none; }
 .links a.l.on { box-shadow: 0 2px 0 var(--accent); padding-bottom: 4px; }
-.menu-btn { display: none; }
+.btn.menu-btn { display: none; }
 
 /* Buttons */
 .btn { display: inline-block; font: inherit; font-size: 14px; font-weight: 600; padding: 9px 16px; border-radius: 6px;
@@ -185,7 +185,7 @@ footer .fine p { color: var(--faint); font-size: 12.5px; margin-bottom: .6em; }
   .links.open { display: flex; }
   .links a.l { padding: 10px 0; width: 100%; }
   .links a.l.on { box-shadow: none; color: var(--accent); }
-  .menu-btn { display: inline-block; }
+  .btn.menu-btn { display: inline-block; }
   section { padding: 52px 0; }
 }
 @media (max-width: 520px) { .g4 { grid-template-columns: 1fr; } .mini { grid-template-columns: 1fr 1fr 1fr; } footer .cols { grid-template-columns: 1fr; } }

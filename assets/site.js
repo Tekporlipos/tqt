@@ -8,6 +8,17 @@
     var b = document.getElementById("theme-btn");
     if (b) b.textContent = current() === "dark" ? "Light" : "Dark";
   }
+  // Follow the device setting live, unless the visitor picked a theme.
+  try {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+      var saved = null;
+      try { saved = localStorage.getItem(KEY); } catch (x) {}
+      if (saved !== "light" && saved !== "dark") {
+        root.setAttribute("data-theme", e.matches ? "dark" : "light");
+        label();
+      }
+    });
+  } catch (e) {}
   document.addEventListener("DOMContentLoaded", function () {
     label();
     var b = document.getElementById("theme-btn");
