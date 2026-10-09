@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Performance — Tekpor Quant Technologies</title>
+<meta name="description" content="How Tekpor Quant reports results: live dashboard, equity move, daily P&L and drawdown, with losses shown alongside gains.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<script>try{var t=localStorage.getItem("tqt_theme");document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}catch(e){}</script>
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt=""><span>Tekpor Quant<small>Technologies</small></span></a>
+    <nav class="links" id="links">
+      <a class="l" href="index.html">Home</a>
+      <a class="l" href="solutions.html">Approach</a>
+      <a class="l on" href="performance.html">Performance</a>
+      <a class="l" href="roadmap.html">Roadmap</a>
+      <a class="l" href="risk.html">Risk</a>
+      <a class="l" href="about.html">About</a>
+      <button class="btn sm" id="theme-btn" type="button" aria-label="Toggle light and dark theme">Light</button>
+      <a class="btn sm primary" href="https://dashboard.tekporquant.live">Live dashboard</a>
+    </nav>
+    <button class="btn sm menu-btn" id="menu-btn" type="button" aria-label="Menu">Menu</button>
+  </div>
+</header>
+
+<main>
+<div class="page-hero"><div class="wrap">
+  <div class="eyebrow">Performance</div>
+  <h1>Results you can check yourself</h1>
+  <p class="lead">We invest from a live account and publish it. Returns vary from day to day and month to month, and the dashboard shows losing days as plainly as winning ones.</p>
+</div></div>
+
+<section>
+  <div class="wrap">
+    <div class="head"><div class="eyebrow">What is published</div><h2>The public dashboard</h2></div>
+    <div class="grid g2">
+      <div class="card"><h3>Daily P&amp;L calendar</h3><p>Every day of the month with the P&amp;L amount and the percentage move in equity for that day, going back through previous months.</p></div>
+      <div class="card"><h3>Equity move</h3><p>The percentage change in equity over the period you select: today, yesterday, 7 days, 30 days, 90 days, year or all time.</p></div>
+      <div class="card"><h3>Unrealized P&amp;L</h3><p>The floating result of open positions, recorded every minute and shown as candles (up to one-hour bars) or a line.</p></div>
+      <div class="card"><h3>Market context</h3><p>Currency strength and the economic calendar, so you can see what the market is doing around the positions.</p></div>
+    </div>
+    <div class="row" style="margin-top:26px"><a class="btn primary" href="https://dashboard.tekporquant.live">Open the dashboard</a></div>
+  </div>
+</section>
+
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">How to read it</div>
+      <h2>Judge the path, not only the total</h2>
+      <p class="lead">A good month can hide a large drawdown, and a flat month can hide a lot of risk. These are the measures we look at ourselves.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card"><h3>Return</h3><p>Equity move over a period. Always read it next to the drawdown that came with it.</p></div>
+      <div class="card"><h3>Drawdown</h3><p>The fall from a previous equity peak. It tells you what holding through the bad stretch would have felt like.</p></div>
+      <div class="card"><h3>Risk at stop</h3><p>What the open book would lose if every stop were hit, measured in account currency.</p></div>
+    </div>
+    <div class="callout" style="margin-top:26px"><strong>Targets are not promises</strong><p>Any monthly return figure we mention is an internal target we measure ourselves against. It is not a forecast and it is not guaranteed. Individual days on the dashboard include losses of several percent.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><div class="eyebrow">Reporting standard</div><h2>What we are committing to</h2></div>
+    <div class="grid g2">
+      <div class="card"><ul class="ticks">
+        <li>Live account results only, no back-tested numbers presented as live</li>
+        <li>Losses shown with the same prominence as gains</li>
+        <li>Figures in the account currency, with the currency stated</li>
+      </ul></div>
+      <div class="card"><ul class="ticks">
+        <li>Periodic written reviews: what worked, what did not, what changed</li>
+        <li>Broker statements or an independent verifier added to the record (see roadmap)</li>
+        <li>Fees and costs disclosed before any outside capital is taken</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><div class="brand" style="margin-bottom:12px"><img src="assets/logo.svg" alt=""><span>Tekpor Quant Technologies</span></div><p class="note">Systematic investing and transparent reporting.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="solutions.html">Approach</a></li><li><a href="performance.html">Performance</a></li><li><a href="roadmap.html">Roadmap</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="about.html#contact">Contact</a></li><li><a href="https://dashboard.tekporquant.live">Live dashboard</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="risk.html">Risk disclosure</a></li><li><a href="risk.html#terms">Terms of use</a></li><li><a href="risk.html#privacy">Privacy</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p>Investing in markets such as forex, indices, metals and crypto, especially with leverage, carries a high risk of loss and may not suit everyone. Past performance is not a reliable indicator of future results. Content on this site is for information only and is not investment advice or an offer to sell or a solicitation to buy any security or fund interest.</p>
+      <p>© <span id="year">2026</span> Tekpor Quant Technologies. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
